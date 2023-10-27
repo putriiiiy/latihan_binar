@@ -1,0 +1,37 @@
+###POST http://localhost:3000/api/v1/imagekit/qr-codes
+###Content-Type: application/json
+
+###{
+   ### "qr_data":"https://imagekit.io"
+###}
+
+POST http://localhost:3000/api/v1/imagekit/register
+Content-Type: application/json
+
+{
+    "email":"rinapujiati1111@mail.com",
+    "password":"rina123",
+    "password_confirmation":"rina123",
+     "profile" : {
+        "first_name" : "rina",
+        "last_name" : "pujiati",
+        "birth_date" : "19 februari 2003",
+        "profile_picture" : "  "
+    }
+}
+
+
+###
+POST http://localhost:3000/api/v1/imagekit/login
+Content-Type: application/json
+
+{
+    "email":"rinapujiati1111@mail.com",
+    "password":"rina123"
+}
+
+
+###
+GET http://localhost:3000/api/v1/imagekit/whoami
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNjk4Mzg5NzExfQ.0aHgB9KTtJEEUnK99TaDCvrPdDhui939jKThcYbJMGk
+
